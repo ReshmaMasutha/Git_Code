@@ -1,1 +1,32 @@
 print("hello")
+# Base class
+class Car1:
+    def alto(self):
+        print("Car1: Alto is a budget-friendly car.")
+
+    def shift(self):
+        print("Car1: Shift is a mid-range hatchback.")
+
+# Another class with same method names
+class Car2:
+    def alto(self):
+        print("Car2: Alto is now upgraded with new features.")
+
+    def shift(self):
+        print("Car2: Shift offers automatic transmission now.")
+
+# Polymorphic function
+def show_car_features(car):
+    car.alto()
+    car.shift()
+
+# Create objects
+car_a = Car1()
+car_b = Car2()
+
+# Demonstrating polymorphism
+print("Features from Car1:")
+show_car_features(car_a)
+
+print("\nFeatures from Car2:")
+show_car_features(car_b)
