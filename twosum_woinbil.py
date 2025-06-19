@@ -19,4 +19,5 @@ nums = [2, 7, 11, 15]
 target = 9
 sol = Solution()
 result = sol.twoSum(nums, target)
-print(result)  # Output: [0, 1]
+print(result) 
+ # Output: [0, 1]
